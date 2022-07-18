@@ -1,0 +1,154 @@
+usd() =>
+    // inputs
+    ucpi1=1
+    ucpi2=1
+    ucpi3=1
+    ucpi4=1
+    uinf1=1
+    uinf2=1
+    uinf3=1
+    uinf4=1
+    uint1=1
+    uint2=1
+    uint3=1
+    uint4=1
+    ugdp1=1
+    ugdp2=1
+    ugdp3=1
+    ugdp4=1
+    [ucpi1, ucpi2, ucpi3, ucpi4, uinf1, uinf2, uinf3, uinf4, uint1, uint2, uint3, uint4, ugdp1, ugdp2, ugdp3, ugdp4]
+
+cad() =>
+    // inputs
+    ccpi1=1
+    ccpi2=1
+    ccpi3=1
+    ccpi4=1
+    cinf1=1
+    cinf2=1
+    cinf3=1
+    cinf4=1
+    cint1=1
+    cint2=1
+    cint3=1
+    cint4=1
+    cgdp1=1
+    cgdp2=1
+    cgdp3=1
+    cgdp4=1
+    [ccpi1, ccpi2, ccpi3, ccpi4, cinf1, cinf2, cinf3, cinf4, cint1, cint2, cint3, cint4, cgdp1, cgdp2, cgdp3, cgdp4]
+
+eur() =>
+    // inputs
+    ecpi1=1
+    ecpi2=1
+    ecpi3=1
+    ecpi4=1
+    einf1=1
+    einf2=1
+    einf3=1
+    einf4=1
+    eint1=1
+    eint2=1
+    eint3=1
+    eint4=1
+    egdp1=1
+    egdp2=1
+    egdp3=1
+    egdp4=1
+    [ecpi1, ecpi2, ecpi3, ecpi4, einf1, einf2, einf3, einf4, eint1, eint2, eint3, eint4, egdp1, egdp2, egdp3, egdp4]
+
+jpy() =>
+    // inputs
+    jcpi1=1
+    jcpi2=1
+    jcpi3=1
+    jcpi4=1
+    jinf1=1
+    jinf2=1
+    jinf3=1
+    jinf4=1
+    jint1=1
+    jint2=1
+    jint3=1
+    jint4=1
+    jgdp1=1
+    jgdp2=1
+    jgdp3=1
+    jgdp4=1
+    [jcpi1, jcpi2, jcpi3, jcpi4, jinf1, jinf2, jinf3, jinf4, jint1, jint2, jint3, jint4, jgdp1, jgdp2, jgdp3, jgdp4]
+
+gbp() =>
+    // inputs
+    gcpi1=1
+    gcpi2=1
+    gcpi3=1
+    gcpi4=1
+    ginf1=1
+    ginf2=1
+    ginf3=1
+    ginf4=1
+    gint1=1
+    gint2=1
+    gint3=1
+    gint4=1
+    ggdp1=1
+    ggdp2=1
+    ggdp3=1
+    ggdp4=1
+    [gcpi1, gcpi2, gcpi3, gcpi4, ginf1, ginf2, ginf3, ginf4, gint1, gint2, gint3, gint4, ggdp1, ggdp2, ggdp3, ggdp4]
+
+aud() =>
+    // inputs
+    acpi1=1
+    acpi2=1
+    acpi3=1
+    acpi4=1
+    ainf1=1
+    ainf2=1
+    ainf3=1
+    ainf4=1
+    aint1=1
+    aint2=1
+    aint3=1
+    aint4=1
+    agdp1=1
+    agdp2=1
+    agdp3=1
+    agdp4=1
+    [acpi1, acpi2, acpi3, acpi4, ainf1, ainf2, ainf3, ainf4, aint1, aint2, aint3, aint4, agdp1, agdp2, agdp3, agdp4]
+
+nzd() =>
+    // inputs
+    ncpi1=1
+    ncpi2=1
+    ncpi3=1
+    ncpi4=1
+    ninf1=1
+    ninf2=1
+    ninf3=1
+    ninf4=1
+    nint1=1
+    nint2=1
+    nint3=1
+    nint4=1
+    ngdp1=1
+    ngdp2=1
+    ngdp3=1
+    ngdp4=1
+    [ncpi1, ncpi2, ncpi3, ncpi4, ninf1, ninf2, ninf3, ninf4, nint1, nint2, nint3, nint4, ngdp1, ngdp2, ngdp3, ngdp4]
+
+if syminfo.basecurrency == 'USD'
+    [bcpi1, bcpi2, bcpi3, bcpi4, binf1, binf2, binf3, binf4, bint1, bint2, bint3, bint4, bgdp1, bgdp2, bgdp3, bgdp4] = usd()
+else if syminfo.basecurrency == 'CAD'
+    [bcpi1, bcpi2, bcpi3, bcpi4, binf1, binf2, binf3, binf4, bint1, bint2, bint3, bint4, bgdp1, bgdp2, bgdp3, bgdp4] = cad()
+else if syminfo.basecurrency == 'EUR'
+    [bcpi1, bcpi2, bcpi3, bcpi4, binf1, binf2, binf3, binf4, bint1, bint2, bint3, bint4, bgdp1, bgdp2, bgdp3, bgdp4] = eur()
+else if syminfo.basecurrency == 'JPY'
+    [bcpi1, bcpi2, bcpi3, bcpi4, binf1, binf2, binf3, binf4, bint1, bint2, bint3, bint4, bgdp1, bgdp2, bgdp3, bgdp4] = jpy()
+else if syminfo.basecurrency == 'GBP'
+    [bcpi1, bcpi2, bcpi3, bcpi4, binf1, binf2, binf3, binf4, bint1, bint2, bint3, bint4, bgdp1, bgdp2, bgdp3, bgdp4] = gbp()
+else if syminfo.basecurrency == 'AUD'
+    [bcpi1, bcpi2, bcpi3, bcpi4, binf1, binf2, binf3, binf4, bint1, bint2, bint3, bint4, bgdp1, bgdp2, bgdp3, bgdp4] = aud()
+else if syminfo.basecurrency == 'NZD'
+    [bcpi1, bcpi2, bcpi3, bcpi4, binf1, binf2, binf3, binf4, bint1, bint2, bint3, bint4, bgdp1, bgdp2, bgdp3, bgdp4] = nzd()
